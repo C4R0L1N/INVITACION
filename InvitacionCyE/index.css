@@ -1,0 +1,43 @@
+.body {
+    background-color: black;
+    color: goldenrod;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.Abrir {
+    text-align: center;
+    animation: efectozoom 2s linear infinite;
+}
+
+@keyframes efectozoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.subir {
+    animation: subirY 2s linear 1;
+}
+
+@keyframes subirY {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}

@@ -28,3 +28,6 @@ const cuentaRegresivaInterval = setInterval(actualizarCuentaRegresiva, 1000);
 
 // Llama a la función para que comience inmediatamente
 actualizarCuentaRegresiva();
+
+
+

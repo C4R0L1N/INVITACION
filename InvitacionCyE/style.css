@@ -1,160 +1,497 @@
-@font-face {
-    font-family: 'great';
-    src: url('font/great-vibes/GreatVibes-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+.body {
+
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    background-image: url('Imagen/FondoTex.png');
+    background-attachment: fixed;
+    color: gray;
+    max-width: 100%;
+    overflow-x:hidden;
+    width: 375px;
+    max-width: 375px;
 }
 
-@font-face {
-    font-family: 'miama';
-    src: url('font/miama/Miama.ttf') format('ttf'); /* Ruta a tu fuente en TFS */
-    font-weight: normal;
-    font-style: normal;
-}
-body {
-    
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-image: url('Imagen/fondo.jpg');
-    background-size: contain; /* Esto ajusta la imagen para que cubra todo el elemento */
-    background-repeat: repeat/* Esto evita que la imagen se repita */
-}
-p{
-    font-family: great, sans-serif;
-}
-.container {
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 20px;
-    background-color: #ecececd5;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.logo{
-    border-radius: 50%;
-    align-items: center;
-    max-width: 80%;
-    margin: -70px;
-}
+
 .Titulo {
     text-align: center;
     font-size: 20px;
-    font-family: great;
-    color: #02441e;
-}
-.subtitulo{
-    font-size: 20px;
+    font-family: Paris;
     font-weight: bold;
-    color: #02441e;
-    font-family: great;
-}
-.contenedorDivision{
+    color: #ffd700;
     position: relative;
 }
-.contenedorDivision::before{
+
+.TituloNegro {
+    text-align: center;
+    font-size: 20px;
+    font-family: Paris;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: goldenrod;
+    font-family: Paris;
+}
+
+.contenedorPrincipal {
+    position: relative;
+}
+
+.imgInicial {
+    position: relative;
+    width: 100%;
+}
+
+.NosCasamos {
+    color: goldenrod;
+    font-size: 30px;
+    font-family: Paris;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    z-index: 2;
+}
+.nosotros{
+    color: gold;
+    font-size: 30px;
+    font-family: AmsterOne;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    z-index: 2;
+}
+.degradado{
+    position: absolute;
+    background: linear-gradient(#f4f5e500,#f4f5e5, #f4f5e5, #f4f5e5);
+    width: 100%;
+    height: 270px;
+    top: 50%;
+}
+
+.ContenedorBlanco {
+    background-color: #f4f5e5;
+    width: 100%;
+    color: gray;
+    position: relative;
+    font-family: monserrat;
+    top: 140px;
+    height: 350px;
+    max-width: 100%;
+}
+
+.LogoVerde {
+    position: relative;
+    width: 80%;
+    opacity: 0.3;
+}
+
+.papas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 6%;
+}
+
+.mensaje {
+    font-family: monserrat;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.contenedorDivision {
+    position: relative;
+    width: 50%;
+    max-width: 50%;
+}
+
+.contenedorSinDivision {
+    position: relative;
+    width: 50%;
+    max-width: 50%;
+}
+
+.contenedorDivision::before {
     content: '';
-  position: absolute;
-  top: 0;
-  left: 100%; /* Ajusta la posición horizontal de la línea */
-  transform: translateX(-30%); /* Centra la línea verticalmente */
-  width: 1px; /* Ancho de la línea */
-  height: 100%; /* Altura de la línea vertical */
-  background-color: #02441e; /* Color de la línea */
-  transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 1px;
+    height: 100%;
+    background-color: #02441e;
+
 }
-.contenedorPapas{
-    display: flex; 
-    margin: 10%;
-    font-size: 10px;
+
+.contenedorPapas {
+    display: flex;
+    font-size: 14px;
+    width: auto;
+    color: black;
+    font-family: great;
+    font-weight: bold;
 }
-.papasNovia{
-text-align: right;
-margin-right: 10%;
+
+.papasNovia {
+    text-align: right;
+    margin-right: 3%;
 }
-.papasNovio{
+
+.papasNovio {
     text-align: left;
-    margin-left: 10%;
+    margin-left: 3%;
 }
-.cajaRegresiva{
-    display: flex; /* Establece un contenedor flexible */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+
+.imgCruz {
+    width: 10px;
+    position: absolute;
+}
+
+.contenedorInvitar {
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    
+}
+.InvitarTexto {
+    position: absolute;
+    max-width: 100%;
+    z-index: 2;
+    top: 200px;
+    font-family: Paris;
+    font-size: 30px;
+    padding: 10%;
+    color: white;
+}
+.Invitarguia1 {
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    z-index: 2;
+    top: 30px;
+}
+.Invitarguia2 {
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    bottom: -300px;
+    z-index: 2;
+}
+
+.CuentaRegresiva {
+    position: absolute;
+    bottom: 80px;
+    width: 95%;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.cajaRegresiva {
+    display: flex;
+    /* Establece un contenedor flexible */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
     padding: 1%;
 
 }
-.ItemRegresiva{
-    color: #02441e;
-    padding: 3%;
-    border-radius: 10px;
+
+.ItemRegresiva {
+    color: goldenrod;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 20%;
-    height: 50px;
-    flex: 1; /* Hace que las cajas ocupen un espacio igual dentro del contenedor */
-    margin: 5px;
-    font-family: great;
-    border: 1px solid #02441e;
+    height: 50%;
+    flex: 1;
+    /* Hace que las cajas ocupen un espacio igual dentro del contenedor */
+    margin: 3px;
+    font-family: Paris;
 }
 
-.evento {
-    background-color: #ecf3edbb;
-    border-radius: 20px;
-    margin:5%;
+.ContenedorUbicaciones{
+    max-width: 100%;
+    padding: 20px;
+    background-image: url("Imagen/fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.contenedorDireccion {
     padding: 10px;
-    
-}
-.evento div{
-    display: flex;
-    align-items: center;
-}
-.imgLugar{
-    border-radius: 50%;
-    max-width: 50%;
-    align-items: center;
-    margin: auto;
+    position: relative;
+    color: goldenrod;
+    max-width: 100%;
 }
 
-.imgVestimenta{
-    max-width: 50%;
-    align-items: center;
+.direccion {
     margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+}
 
+.imgLugar {
+    border-radius: 100%;
+    margin: auto;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: drop-shadow(0 0.3px 5px goldenrod);
+    max-width: 40%;
 }
 
 .button {
-    display: inline-block;
     padding: 10px 20px;
-    color: #02441e;
+    color: goldenrod;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: -0px;
-    margin: auto;
     font-size: 16px;
     transition: background-color 0.3s ease-in-out;
-    border: 1px solid #02441e;
+    border: 1px solid goldenrod;
+    position: relative;
 }
 
 .button:hover {
-    background-color: #02441e;
-    color: #fff;
+    background-color: goldenrod;
+    color: black;
 }
 
-.buttonSEARS{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #02441e;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: -0px;
+.imgFondo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.guiaFinDireccion{
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    top: -100px;
+    z-index: 2;
+}
+
+.ContenedorPadrinos{
+    
+    width: 100%;
+    position: relative;
+    top: -150px;
+    max-width: 100%;
+}
+
+.carruselTitulo {
+    font-family: Amster;
+    color: gold;
+    font-size: 50px;
+    text-shadow:
+        15px 5px 20px white,
+        0 0 1em black,
+        0 0 0.2em black;
+    text-align: right;
+}
+
+.carruselTexto {
+    color: silver;
+    font-family: paris;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    bottom: 10px;
+}
+.item{
+    height: 300px;
+    position: absolute;
+}
+
+.ContenedorRegalos {
+    position: relative;
+    top: -100px;
+}
+
+.imgRegalos {
+    max-width: 10%;
+    align-items: center;
     margin: auto;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
+}
+.mensajeRegalo{
+    padding: 9%;
 }
 
+.agradecimientoTitulo {
+    font-family: Amster;
+    color: gold;
+    font-size: 30px;
+    margin: auto;
+}
 
-.peque{
+.agradecimientoTexto {
+    font-family: Paris;
+    color: goldenrod;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+}
+.ContenedorVestimenta {
+    background-color: #f4f5e5;
+    width: 100%;
+    color: gray;
+    position: relative;
+    font-family: monserrat;
+    height: 620px;
+    max-width: 100%;
+}
+.contenidoVestimenta{
+    top: -100px;
+    position: relative;
+}
+.leyendaVestimenta {
+    font-family: great;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.imgvestimenta {
+    margin: auto;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+}
+.peque {
     font-size: 10px;
+}
+.guia {
+    position: relative;
+    top: -85px;
+    max-width: 100%;
+    rotate: 180deg;
+}
+
+.audio {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+    width: 90%;
+    max-width: 300px;
+}
+.contenedorPases{
+    background-color: #f4f5e5;
+    width: 100%;
+    color: gray;
+    position: relative;
+    font-family: monserrat;
+    top: -2px;
+    height: 400px;
+    max-width: 100%;
+}
+.contenidoPases{
+    position: relative;
+    top: -90px;
+}
+.imgPase{
+    max-width: 30%;
+    align-items: center;
+    margin: auto;
+}
+
+.contenedorConfirmacion {
+    position: relative;
+   
+}
+.GuiaFinal{
+    position: relative;
+    max-width: 100%;
+    top: -100px;
+}
+.contenidoConfirmacion{
+    position: relative;
+    top: -100px;
+}
+.textoconfirmacion{
+    font-family: Amster;
+    font-size: 25px;
+    color: #84928a;
+    padding: 10%;
+}
+.botonWhat{
+    position: relative;
+    margin: auto;
+    width: 40%;
+}
+.final{
+    position: relative;
+    font-family: Amster;
+    font-size: 40px;
+    color: goldenrod;
+    bottom: -50px;
+}
+.LogoDorado{
+    position: relative;
+    max-width: 80%;
+}
+
+@font-face {
+    font-family: monserrat;
+    src: url('/font/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: great;
+    src: url('/font/GreatVibes-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Amster;
+    src: url('/font/Amsterdam.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Paris;
+    src: url('/font/Parisienne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sacramento;
+    src: url('/font/Sacramento-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: AmsterOne;
+    src: url('/font/AmsterdamOne.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
